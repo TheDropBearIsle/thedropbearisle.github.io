@@ -246,3 +246,50 @@ img{max-width:100%; display:block}
 @media (max-width: 720px){
   .home-splash .overlay .yt-wrap{ padding-bottom: 22px; }
 }
+
+
+/* --- HOME: artwork-as-UI --- */
+body.home{
+  height:100vh;
+  overflow:hidden;
+}
+body.home .topbar{display:none;} /* the artwork already has its own nav bar */
+
+/* Fullscreen artwork (no crop; letterboxes if needed) */
+.artwrap{
+  position:relative;
+  width:100vw;
+  height:100vh;
+  background: radial-gradient(900px 650px at 50% 0%, rgba(255,211,122,.10), transparent 60%),
+              linear-gradient(180deg, #07150d, #041008);
+}
+.artwrap img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:contain; /* show whole artwork */
+  object-position:center top;
+}
+
+/* Invisible clickable hotspots that sit on top of the painted buttons */
+.hotspot{
+  position:absolute;
+  display:block;
+  border-radius:10px;
+  background: rgba(255,255,255,0.00);
+  border: 0;
+  cursor:pointer;
+  pointer-events:auto;
+  /* optional debug: uncomment next line to see clickable areas */
+  /* outline:2px solid rgba(255,0,0,.35); background:rgba(255,0,0,.10); */
+}
+
+/* A11y: show focus ring for keyboard */
+.hotspot:focus-visible{
+  outline: 3px solid rgba(255,211,122,.70);
+  outline-offset: 2px;
+}
+
+/* Make sure other pages keep nav visible */
+body:not(.home) .topbar{display:block}
