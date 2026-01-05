@@ -1,10 +1,10 @@
 :root{
   --bg:#06130b;
-  --panel: rgba(7,20,12,.75);
-  --panel2: rgba(10,28,18,.70);
+  --panel: rgba(7,20,12,.78);
+  --panel2: rgba(10,28,18,.74);
   --line: rgba(255,255,255,.18);
   --text:#f5f4ee;
-  --muted: rgba(245,244,238,.82);
+  --muted: rgba(245,244,238,.84);
 
   --gold1:#ffd37a;
   --gold2:#d6a54a;
@@ -26,13 +26,15 @@ body{
   margin:0;
   font-family:var(--font);
   color:var(--text);
-  background: radial-gradient(1000px 600px at 50% 0%, rgba(255,211,122,.12), transparent 60%),
-              radial-gradient(900px 700px at 15% 10%, rgba(44,143,97,.12), transparent 60%),
-              linear-gradient(180deg, #07150d, #041008);
+  background:
+    radial-gradient(1000px 600px at 50% 0%, rgba(255,211,122,.12), transparent 60%),
+    radial-gradient(900px 700px at 15% 10%, rgba(44,143,97,.12), transparent 60%),
+    linear-gradient(180deg, #07150d, #041008);
   overflow-x:hidden;
 }
 
 a{color:inherit; text-decoration:none}
+img{max-width:100%; display:block}
 .container{max-width:var(--max); margin:0 auto; padding:0 18px}
 
 .topbar{
@@ -50,31 +52,40 @@ a{color:inherit; text-decoration:none}
 
 .brand{
   display:flex; align-items:center; gap:10px;
-  min-width:240px;
+  min-width:220px;
 }
-
 .brand h1{margin:0; font-size:15px; letter-spacing:.2px}
 .brand span{display:block; margin-top:2px; font-size:12px; color:var(--muted)}
 
 .navlinks{
-  display:flex; align-items:center; gap:10px; flex-wrap:wrap;
-  padding:10px 12px;
+  display:flex; align-items:center; gap:8px; flex-wrap:wrap;
+  padding:10px 10px;
   border-radius:14px;
   background: linear-gradient(180deg, rgba(42,74,67,.85), rgba(31,59,53,.85));
   border:1px solid rgba(255,255,255,.14);
 }
 
+/* MAKE THESE LOOK LIKE CLICKABLE BUTTONS */
 .navlinks a{
-  padding:10px 12px;
+  padding:10px 14px;
   border-radius:12px;
-  color:rgba(255,255,255,.88);
-  font-weight:800;
-  letter-spacing:.6px;
+  color:rgba(255,255,255,.92);
+  font-weight:900;
+  letter-spacing:.7px;
   text-transform:uppercase;
   font-size:12px;
+  border:1px solid rgba(255,255,255,.10);
+  background: rgba(0,0,0,.12);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.08);
 }
-.navlinks a:hover{background: rgba(255,255,255,.08)}
-.navlinks a.active{background: rgba(255,211,122,.14); border:1px solid rgba(255,211,122,.22)}
+.navlinks a:hover{
+  background: rgba(255,255,255,.10);
+  border-color: rgba(255,255,255,.18);
+}
+.navlinks a.active{
+  background: rgba(255,211,122,.18);
+  border-color: rgba(255,211,122,.28);
+}
 
 .nav-cta{
   display:flex; gap:10px; align-items:center;
@@ -87,7 +98,7 @@ a{color:inherit; text-decoration:none}
   border:1px solid rgba(255,255,255,.18);
   background: rgba(255,255,255,.04);
   color:var(--text);
-  font-weight:800;
+  font-weight:900;
   letter-spacing:.2px;
 }
 .btn:hover{background: rgba(255,255,255,.07)}
@@ -99,16 +110,14 @@ a{color:inherit; text-decoration:none}
 
 .btn.youtube{
   border-color: rgba(182,69,45,.55);
-  background: linear-gradient(180deg, rgba(182,69,45,.75), rgba(143,47,31,.75));
+  background: linear-gradient(180deg, rgba(182,69,45,.85), rgba(143,47,31,.85));
 }
 
 .menu-btn{display:none}
 
 .hero{
-  position:relative;
-  padding:18px 0 32px 0;
+  padding:18px 0 26px 0;
 }
-
 .hero-card{
   border-radius: 18px;
   overflow:hidden;
@@ -117,21 +126,8 @@ a{color:inherit; text-decoration:none}
   background: rgba(0,0,0,.25);
 }
 
-.hero-img{
-  width:100%;
-  height:auto;
-  display:block;
-}
-
-.section{
-  padding:54px 0;
-}
-
-.section h2{
-  margin:0 0 14px 0;
-  font-size:28px;
-  letter-spacing:.2px;
-}
+.section{padding:48px 0}
+.section h2{margin:0 0 14px 0; font-size:28px; letter-spacing:.2px}
 
 .panel{
   background: linear-gradient(180deg, var(--panel), var(--panel2));
@@ -178,9 +174,32 @@ a{color:inherit; text-decoration:none}
 }
 .footer a{color:var(--text)}
 
+/* Mobile nav */
 @media (max-width: 980px){
   .navlinks{display:none}
   .menu-btn{display:inline-flex}
   .grid3{grid-template-columns:1fr}
   .kv{grid-template-columns:1fr}
+  .mobile{
+    display:none;
+    margin:10px 0 8px 0;
+    padding:10px;
+    border-radius:14px;
+    background: linear-gradient(180deg, rgba(42,74,67,.85), rgba(31,59,53,.85));
+    border:1px solid rgba(255,255,255,.14);
+  }
+  .mobile.open{display:block}
+  .mobile a{
+    display:block;
+    padding:12px 12px;
+    border-radius:12px;
+    margin:6px 0;
+    border:1px solid rgba(255,255,255,.10);
+    background: rgba(0,0,0,.12);
+    font-weight:900;
+    text-transform:uppercase;
+    font-size:12px;
+    letter-spacing:.7px;
+  }
+  .mobile a.active{background: rgba(255,211,122,.18); border-color: rgba(255,211,122,.28);}
 }

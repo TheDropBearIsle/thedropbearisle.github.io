@@ -3,9 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Server Info – The Drop Bear Isle</title>
-  <meta name="description" content="Server information." />
-  <meta name="theme-color" content="#070a07" />
+  <title>Server Info — The Drop Bear Isle</title>
+  <meta name="description" content="Server info for The Drop Bear Isle." />
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
@@ -13,65 +12,72 @@
   <div class="container">
     <nav class="nav">
       <a class="brand" href="index.html">
-        <div class="brand-badge"></div>
         <div>
           <h1>The Drop Bear Isle</h1>
           <span>AU / NZ Unofficial Server</span>
         </div>
       </a>
-      <div class="navlinks">
-        <a href="index.html">Home</a>
-        <a href="server-info.html">Server Info</a>
-        <a href="rules.html">Rules</a>
-        <a href="events.html">Events</a>
-        <a href="join.html">Join</a>
+
+      <div class="navlinks" aria-label="Primary navigation">
+        <a data-nav href="index.html">Home</a>
+<a data-nav href="server-info.html">Server Info</a>
+<a data-nav href="rules.html">Rules</a>
+<a data-nav href="events.html">Events</a>
+<a data-nav href="youtube.html">YouTube</a>
       </div>
+
       <div class="nav-cta">
-        <a class="btn small ghost" href="https://discord.gg/Ek83Q6mwNK" target="_blank">Discord</a>
+        <a class="btn" href="https://discord.gg/Ek83Q6mwNK" target="_blank" rel="noreferrer">Discord</a>
+        <a class="btn join" href="join.html">Join Us</a>
+        <button class="btn menu-btn" data-menu type="button">Menu</button>
       </div>
     </nav>
+
+    <div class="mobile" data-mobile aria-label="Mobile navigation">
+      <a data-nav href="index.html">Home</a>
+<a data-nav href="server-info.html">Server Info</a>
+<a data-nav href="rules.html">Rules</a>
+<a data-nav href="events.html">Events</a>
+<a data-nav href="youtube.html">YouTube</a>
+<a href="join.html">Join Us</a>
+    </div>
   </div>
 </header>
 
-<main>
+
+
+
 <section class="section">
   <div class="container">
-    <h2>Server Information</h2>
-    <div class="panel pad-lg">
-      <ul class="list">
-        <li><b>Region:</b> Australia & New Zealand (OCE)</li>
-        <li><b>Uptime:</b> 24/7</li>
-        <li><b>Max Players:</b> 200</li>
-        <li><b>Restarts:</b> 1am, 9am, 5pm (AEST)</li>
-        <li><b>Wipes:</b> Only when required by updates</li>
-      </ul>
-      <div class="callout mt16">
-        <strong>Events</strong>
-        <p>A separate server is used for organised events.</p>
-      </div>
+    <h2>Server info</h2>
+    <div class="panel kv">
+      <div class="item"><b>Region:</b> Australia & New Zealand (OCE)</div>
+      <div class="item"><b>Uptime:</b> 24/7</div>
+      <div class="item"><b>Max players:</b> 200</div>
+      <div class="item"><b>Automated restarts (AEST):</b> 1:00 AM • 9:00 AM • 5:00 PM</div>
+      <div class="item"><b>Wipes:</b> Only when required by major updates</div>
+      <div class="item"><b>Events:</b> A separate event server is used during organised events</div>
     </div>
   </div>
 </section>
-</main>
+
 
 <footer class="footer">
   <div class="container">
-    <div class="row">
+    <div style="display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap">
       <div>
-        <b>The Drop Bear Isle</b>
-        <small>Community‑run, unofficial server for The Isle.</small>
-        <small class="muted">Not affiliated with the game developers.</small>
+        <b>The Drop Bear Isle</b><br/>
+        <span>Community-run, unofficial server for The Isle. Not affiliated with or endorsed by the game developers.</span>
       </div>
       <div>
-        <small>Links</small><br>
-        <a href="join.html">How to Join</a><br>
-        <a href="rules.html">Rules</a><br>
-        <a href="https://discord.gg/Ek83Q6mwNK" target="_blank">Discord</a>
+        <a href="https://discord.gg/Ek83Q6mwNK" target="_blank" rel="noreferrer">Discord</a> •
+        <a href="https://www.youtube.com/@TheDropBearIsle" target="_blank" rel="noreferrer">YouTube</a>
       </div>
     </div>
-    <div class="hr"></div>
-    <small>© 2026 The Drop Bear Isle</small>
+    <div style="margin-top:10px; opacity:.8">© 2026</div>
   </div>
 </footer>
+
+<script src="assets/script.js"></script>
 </body>
 </html>

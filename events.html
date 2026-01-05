@@ -3,9 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Events – The Drop Bear Isle</title>
-  <meta name="description" content="Server events." />
-  <meta name="theme-color" content="#070a07" />
+  <title>Events — The Drop Bear Isle</title>
+  <meta name="description" content="Current and past events for The Drop Bear Isle." />
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
@@ -13,55 +12,100 @@
   <div class="container">
     <nav class="nav">
       <a class="brand" href="index.html">
-        <div class="brand-badge"></div>
         <div>
           <h1>The Drop Bear Isle</h1>
           <span>AU / NZ Unofficial Server</span>
         </div>
       </a>
-      <div class="navlinks">
-        <a href="index.html">Home</a>
-        <a href="server-info.html">Server Info</a>
-        <a href="rules.html">Rules</a>
-        <a href="events.html">Events</a>
-        <a href="join.html">Join</a>
+
+      <div class="navlinks" aria-label="Primary navigation">
+        <a data-nav href="index.html">Home</a>
+<a data-nav href="server-info.html">Server Info</a>
+<a data-nav href="rules.html">Rules</a>
+<a data-nav href="events.html">Events</a>
+<a data-nav href="youtube.html">YouTube</a>
       </div>
+
       <div class="nav-cta">
-        <a class="btn small ghost" href="https://discord.gg/Ek83Q6mwNK" target="_blank">Discord</a>
+        <a class="btn" href="https://discord.gg/Ek83Q6mwNK" target="_blank" rel="noreferrer">Discord</a>
+        <a class="btn join" href="join.html">Join Us</a>
+        <button class="btn menu-btn" data-menu type="button">Menu</button>
       </div>
     </nav>
+
+    <div class="mobile" data-mobile aria-label="Mobile navigation">
+      <a data-nav href="index.html">Home</a>
+<a data-nav href="server-info.html">Server Info</a>
+<a data-nav href="rules.html">Rules</a>
+<a data-nav href="events.html">Events</a>
+<a data-nav href="youtube.html">YouTube</a>
+<a href="join.html">Join Us</a>
+    </div>
   </div>
 </header>
 
-<main>
+
+
+
 <section class="section">
   <div class="container">
     <h2>Events</h2>
-    <div class="panel pad-lg">
-      <p>Regular community events and organised play sessions are hosted throughout the year.</p>
+    <div class="panel">
+      <p style="margin-top:0; color:var(--muted); line-height:1.6">
+        This page is for live events and past events. Update it any time you run something special.
+      </p>
     </div>
+
+    <div class="section" style="padding-top:18px">
+      <div class="container" style="padding:0">
+        <div class="grid3" style="grid-template-columns: 1.2fr .8fr .8fr;">
+          <div class="panel">
+            <h3 style="margin:0 0 8px 0">Current event</h3>
+            <p style="margin:0; color:var(--muted)">No event is running right now.</p>
+            <p style="color:var(--muted); line-height:1.6">
+              When an event is live, put the name, time (AEST), and how to join here.
+            </p>
+          </div>
+
+          <div class="panel">
+            <h3 style="margin:0 0 8px 0">How to join events</h3>
+            <p style="color:var(--muted); line-height:1.6">
+              Events are announced on Discord. Some events use the separate event server.
+            </p>
+            <a class="btn join" href="https://discord.gg/Ek83Q6mwNK" target="_blank" rel="noreferrer">Event announcements</a>
+          </div>
+
+          <div class="panel">
+            <h3 style="margin:0 0 8px 0">Past events</h3>
+            <div class="card">
+              <h3 style="margin:0 0 8px 0">Coming soon</h3>
+              <p style="margin:0; color:var(--muted)">Add your past events here (date + short recap).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
-</main>
+
 
 <footer class="footer">
   <div class="container">
-    <div class="row">
+    <div style="display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap">
       <div>
-        <b>The Drop Bear Isle</b>
-        <small>Community‑run, unofficial server for The Isle.</small>
-        <small class="muted">Not affiliated with the game developers.</small>
+        <b>The Drop Bear Isle</b><br/>
+        <span>Community-run, unofficial server for The Isle. Not affiliated with or endorsed by the game developers.</span>
       </div>
       <div>
-        <small>Links</small><br>
-        <a href="join.html">How to Join</a><br>
-        <a href="rules.html">Rules</a><br>
-        <a href="https://discord.gg/Ek83Q6mwNK" target="_blank">Discord</a>
+        <a href="https://discord.gg/Ek83Q6mwNK" target="_blank" rel="noreferrer">Discord</a> •
+        <a href="https://www.youtube.com/@TheDropBearIsle" target="_blank" rel="noreferrer">YouTube</a>
       </div>
     </div>
-    <div class="hr"></div>
-    <small>© 2026 The Drop Bear Isle</small>
+    <div style="margin-top:10px; opacity:.8">© 2026</div>
   </div>
 </footer>
+
+<script src="assets/script.js"></script>
 </body>
 </html>
