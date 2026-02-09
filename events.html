@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Events • The Drop Bear Isle</title>
+  <meta name="description" content="Weekly events schedule (AEST)." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="index.html" aria-label="The Drop Bear Isle home">
+          <span class="brand-mark" aria-hidden="true">🐻</span>
+          <span class="brand-text">The Drop Bear Isle</span>
+        </a>
+
+        <div class="tabs" role="navigation" aria-label="Site sections">
+          <a class="tab " href="index.html">Home</a>
+          <a class="tab " href="info.html">Info</a>
+          <a class="tab " href="rules.html">Rules</a>
+          <a class="tab active" href="events.html">Events</a>
+        </div>
+
+        <div class="nav-right">
+          <div class="social" aria-label="Social links">
+            <a class="icon-btn" id="discordLink" href="#" target="_blank" rel="noopener" aria-label="Discord">
+              <span class="icon" aria-hidden="true">💬</span>
+              <span class="icon-label">Discord</span>
+            </a>
+            <a class="icon-btn" id="youtubeLink" href="#" target="_blank" rel="noopener" aria-label="YouTube">
+              <span class="icon" aria-hidden="true">▶</span>
+              <span class="icon-label">YouTube</span>
+            </a>
+          </div>
+
+          <a class="cta" id="signinLink" href="signin.html">Sign in / Signup</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page simple">
+    <section class="simple-card">
+      <h1>Events</h1>
+      
+      <p class="muted">Event Server is only online during events.</p>
+
+      <h2>Weekly</h2>
+      <div class="event-grid">
+        <div class="event">
+          <h3>Friday — x3 Growth</h3>
+          <p><strong>Time:</strong> 5:00pm – 1:00am AEST</p>
+          <p><strong>Where:</strong> Main Server</p>
+          <p>Jump in, grow faster, and get into the action.</p>
+        </div>
+        <div class="event">
+          <h3>Saturday — Team Deathmatch</h3>
+          <p><strong>Time:</strong> 6:30pm AEST</p>
+          <p><strong>Where:</strong> Event Server</p>
+          <p>Staff-run rounds. Details posted in Discord before start.</p>
+        </div>
+        <div class="event">
+          <h3>Sunday — Community Night</h3>
+          <p><strong>Time:</strong> Flexible</p>
+          <p><strong>Where:</strong> Main Server</p>
+          <p>Roams, clips, screenshots, and chill sessions.</p>
+        </div>
+      </div>
+
+      <h2>Event Notes</h2>
+      <ul>
+        <li>Times are AEST unless stated otherwise.</li>
+        <li>Rules can change per event — check Discord announcements.</li>
+      </ul>
+    
+      <div class="simple-actions">
+        <a class="btn" href="index.html">Back to Home</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div>
+          <strong>The Drop Bear Isle</strong>
+          <div class="muted small">Unofficial community server for The Isle: Evrima</div>
+        </div>
+        <div class="muted small">
+          <span id="year"></span> • Built for GitHub Pages
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Drop Bear Isle</title>
+  <meta name="description" content="AU/NZ community server for The Isle: Evrima — events, rules, and info." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="index.html" aria-label="The Drop Bear Isle home">
+          <span class="brand-mark" aria-hidden="true">🐻</span>
+          <span class="brand-text">The Drop Bear Isle</span>
+        </a>
+
+        <div class="tabs" role="navigation" aria-label="Site sections">
+          <a class="tab active" href="index.html" aria-current="page">Home</a>
+          <a class="tab" href="info.html">Info</a>
+          <a class="tab" href="rules.html">Rules</a>
+          <a class="tab" href="events.html">Events</a>
+        </div>
+
+        <div class="nav-right">
+          <div class="social" aria-label="Social links">
+            <a class="icon-btn" id="discordLink" href="#" target="_blank" rel="noopener" aria-label="Discord">
+              <span class="icon" aria-hidden="true">💬</span>
+              <span class="icon-label">Discord</span>
+            </a>
+            <a class="icon-btn" id="youtubeLink" href="#" target="_blank" rel="noopener" aria-label="YouTube">
+              <span class="icon" aria-hidden="true">▶</span>
+              <span class="icon-label">YouTube</span>
+            </a>
+          </div>
+
+          <a class="cta" id="signinLink" href="signin.html">Sign in / Signup</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page">
+    <section class="grid">
+      <!-- Top-left: Picture -->
+      <article class="card picture">
+        <div class="card-head">
+          <h2>Server Spotlight</h2>
+          <p class="muted">Swap this image any time (events, map, dinos, hype).</p>
+        </div>
+
+        <figure class="media">
+          <!-- Replace assets/hero.jpg with your own image -->
+          <img src="assets/hero.svg" alt="Placeholder artwork for The Drop Bear Isle." />
+        </figure>
+
+        <div class="card-foot">
+          <button class="btn" id="joinDiscordBtn" type="button">Join Discord</button>
+          <button class="btn ghost" id="watchYoutubeBtn" type="button">Watch YouTube</button>
+        </div>
+      </article>
+
+      <!-- Top-right: Text -->
+      <article class="card intro">
+        <div class="card-head">
+          <h2>Welcome, Drop Bears</h2>
+          <p class="muted">AU/NZ community server for <em>The Isle: Evrima</em></p>
+        </div>
+
+        <div class="content">
+          <p>
+            This is the home of <strong>The Drop Bear Isle</strong> — a chill but active community focused on fair play,
+            fun events, and a server that feels alive. If you’re new, hit Discord first.
+          </p>
+
+          <div class="callouts">
+            <div class="pill">🇦🇺 / 🇳🇿 Friendly</div>
+            <div class="pill">Weekly Events</div>
+            <div class="pill">Staff Online Peak</div>
+            <div class="pill">Community Clips</div>
+          </div>
+
+          <hr class="divider" />
+
+          <h3>Quick Info</h3>
+          <ul class="bullets">
+            <li><strong>Growth Boost:</strong> Fridays (see Events)</li>
+            <li><strong>Event Server:</strong> only online during events</li>
+            <li><strong>Rules:</strong> clear + enforced (see Rules)</li>
+          </ul>
+
+          <div class="notice">
+            <span class="dot" aria-hidden="true"></span>
+            <div>
+              <strong>Tip:</strong> Replace this text with your server tagline + connection details.
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Bottom-left: Text -->
+      <article class="card bottom-left">
+        <div class="card-head">
+          <h2>This Week</h2>
+          <p class="muted">Update this box each week. Keep it short.</p>
+        </div>
+        <div class="content">
+          <ul class="bullets">
+            <li><strong>Friday:</strong> x3 Growth (5pm–1am AEST)</li>
+            <li><strong>Saturday:</strong> Team Deathmatch (Event Server)</li>
+            <li><strong>Sunday:</strong> Community Roams / Clips</li>
+          </ul>
+          <a class="link" href="events.html">See full event details →</a>
+        </div>
+      </article>
+
+      <!-- Bottom-middle: Video -->
+      <article class="card video">
+        <div class="card-head">
+          <h2>Featured Video</h2>
+          <p class="muted">Embed a trailer / highlights / weekly recap.</p>
+        </div>
+
+        <div class="video-wrap">
+          <!-- Replace the YouTube video ID in script.js (CONFIG.youtubeVideoId) -->
+          <iframe
+            id="ytEmbed"
+            title="The Drop Bear Isle video"
+            src=""
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+
+        <div class="card-foot">
+          <a class="btn" href="events.html">Upcoming Events</a>
+          <a class="btn ghost" href="rules.html">Read Rules</a>
+        </div>
+      </article>
+
+      <!-- Bottom-right: Text -->
+      <article class="card bottom-right">
+        <div class="card-head">
+          <h2>Server Status</h2>
+          <p class="muted">Static for now. Later: live stats + heatmap.</p>
+        </div>
+        <div class="content">
+          <div class="stat-grid">
+            <div class="stat">
+              <div class="stat-k">Region</div>
+              <div class="stat-v">AU / NZ</div>
+            </div>
+            <div class="stat">
+              <div class="stat-k">Peak Time</div>
+              <div class="stat-v">7pm AEST</div>
+            </div>
+            <div class="stat">
+              <div class="stat-k">Main Server</div>
+              <div class="stat-v">Online</div>
+            </div>
+            <div class="stat">
+              <div class="stat-k">Event Server</div>
+              <div class="stat-v">Event-only</div>
+            </div>
+          </div>
+
+          <hr class="divider" />
+
+          <p class="muted small">
+            Want sign-in + Steam linking + currency/leaderboards later? This layout is already ready for that.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div>
+          <strong>The Drop Bear Isle</strong>
+          <div class="muted small">Unofficial community server for The Isle: Evrima</div>
+        </div>
+        <div class="muted small">
+          <span id="year"></span> • Built for GitHub Pages
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
