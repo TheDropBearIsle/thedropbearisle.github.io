@@ -1,9 +1,9 @@
 // The Drop Bear Isle — quick config for links + video
 const CONFIG = {
-  discordUrl: "https://discord.gg/YOUR_INVITE",
-  youtubeUrl: "https://www.youtube.com/@YOUR_CHANNEL",
+  discordUrl: "https://discord.gg/thedropbearisle",
+  youtubeUrl: "https://www.youtube.com/@@TheDropBearIsle",
   // Replace with your YouTube video ID (not full URL)
-  youtubeVideoId: "dQw4w9WgXcQ",
+  youtubeVideoId: "k85w5n728a8",
   // If you want "Sign in / Signup" to go somewhere else for now:
   signinUrl: "signin.html"
 };
