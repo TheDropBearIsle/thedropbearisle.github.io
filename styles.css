@@ -133,6 +133,21 @@ a.link:hover{ opacity: 0.9; }
   color: var(--muted);
 }
 
+.icon-svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+  fill: currentColor;   /* KEY: makes the SVG match text color */
+}
+
+.icon-btn {
+  color: var(--muted);  /* icons inherit this color */
+}
+
+.icon-btn:hover {
+  color: var(--text);   /* icons become brighter on hover */
+}
+
 .cta{
   padding: 10px 14px;
   border-radius: 14px;
