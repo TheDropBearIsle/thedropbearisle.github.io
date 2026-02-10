@@ -1,12 +1,12 @@
 // The Drop Bear Isle — quick config for links + video
-const CONFIG = {
+window.CONFIG = window.CONFIG || {
   discordUrl: "https://discord.gg/thedropbearisle",
   youtubeUrl: "https://www.youtube.com/@TheDropBearIsle",
-  // Replace with your YouTube video ID (not full URL)
   youtubeVideoId: "k85w5n728a8",
-  // If you want "Sign in / Signup" to go somewhere else for now:
   signinUrl: "signin.html"
 };
+
+const CONFIG = window.CONFIG;
 
 function setHref(id, url){
   const el = document.getElementById(id);
